@@ -1,0 +1,113 @@
+.young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-weight: 400;  /* normal */
+  font-style: normal;
+}
+
+.outfit-semibold {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;  /* semi-bold */
+  font-style: normal;
+}
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;  /* normal */
+  font-style: normal;
+}
+
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;  /* bold */
+  font-style: normal;
+}
+body{
+    background-color: hsl(0, 0%, 8%);
+    display: flex;    
+    flex-direction: column;          
+    justify-content: center;    
+    align-items: center;       
+    height: 100vh;             
+    margin: 0;   
+    min-width: 312px;
+}
+.main-container{
+    width: 300px;
+    height: 600px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 12%);
+    display: flex;
+    flex-direction: column;  
+    align-items: center;       
+    padding: 2rem;
+     gap: 20px
+}
+.attribution{
+    position: fixed;
+    bottom: 0;
+}
+.main-container img{
+    width: 100px;
+    border-radius: 50%;
+}
+.description h1 {
+  margin-bottom: 0.5rem;
+}
+.description p {
+  margin-top: 0;  
+  font-size: 14px;
+}
+
+.link-box {
+  width: 300px;
+  display: block;
+}
+
+
+
+.link-box button {
+  width: 100%;
+  display: block;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  
+}
+.link-box button:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: black;
+}
+.links.inter-bold button {
+  font-weight: 700;    /* bold text */
+  width: 100%;        /* full width of container */
+}
+
+
+
+@media (min-width: 900px) {
+  .main-container {
+    width: 400px;   /* bigger main container */
+    height: 680px;  /* bigger height */
+  }
+
+  .link-box {
+    width: 400px;   /* buttons get wider too */
+  }
+
+  .link-box button {
+    font-size: 18px; /* slightly bigger text */
+    padding: 1.2rem 0; /* a bit more padding */
+  }
+  .description h1{
+    font-size: 32px; 
+  }
+    .description p {
+    font-size: 18px;  /* bigger font on desktop */
+  }
+}
